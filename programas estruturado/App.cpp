@@ -1,23 +1,27 @@
 #include <iostream>
+#include <string.h>
 using namespace std;
 int main(int argc, char const* argv[]) {
-  // contraseña
-  char contrasenia[8];
-  char usuario[8];
+  // contraseñads
+  string contrasenia, usuario, turno;
   char opc;
+  int promedio;
+  bool result = false;
+
   do {
     cout << "introduce tu nombre de usuario: ";
-    cin.getline(usuario, 14, '\n');
+    getline(cin, usuario);
     cout << "introduce tu contraseña: ";
-    cin.getline(contrasenia, 9, '\n');
+    getline(cin, contrasenia);
     if (usuario == "joseluis" && contrasenia == "12345678") {
       cout << "BIENVENIDO: " << usuario << endl;
+      result = true;
     }
     else {
-      cout << "inocreccto las credenciales vuelve a intentar";
+      cout << "inocreccto las credenciales vuelve a intentar" << endl;
     }
 
-  } while (usuario == "joseluis" && contrasenia == "12345678");
+  } while (!(result));
 
   cout << "******* OFERTA ACADEMICA*********" << endl;
   cout << "A.- Ingenieria" << endl;
