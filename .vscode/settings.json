@@ -2,8 +2,13 @@
   "files.associations": {
     "iostream": "cpp",
     "*.tcc": "cpp",
+<<<<<<< HEAD
     "ostream": "cpp",
     "string": "cpp"
   },
   "C_Cpp.errorSquiggles": "Disabled"
+=======
+    "ostream": "cpp"
+  }
+>>>>>>> d1e7ff3ccc0b9ffb4f622cc510b405dc76a0cd4c
 }
